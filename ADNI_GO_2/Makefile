@@ -2,12 +2,9 @@ include config.mk
 
 QC_LOGS=$(wildcard $(WORKING_DIR)/*.log)
 
-## ls           : testing permissions
-.phony : ls
-ls : 
-	ls $(DATA_DIR)$(BFILE).bed
-
 ## QC           : run QC checks
+.PHONY : QC
+QC : sexcheck missing mendel snps_missing snps_HW MAF
 
 ## sexcheck     : remove subjects with errors in gender assignment in data
 .PHONY : sexcheck
@@ -47,6 +44,8 @@ MAF : $(WORKING_DIR)$(BFILE)_snpsHW.bed
 QC_logs : $(QC_LOGS)
 	mkdir -p $(WORKING_DIR)/logs/
 	mv $(QC_LOGS) $(WORKING_DIR)/logs/
+
+
 
 ## variables    : Print variables.
 .PHONY: variables
