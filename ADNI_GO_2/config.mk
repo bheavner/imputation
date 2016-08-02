@@ -1,6 +1,10 @@
 PLINK_EXE=/local/tools/plink-1.90/plink
 SHAPEIT_EXE=/local/tools/shapeit.v2.r837/bin/shapeit
+MINIMAC3_EXE=/local/tools/Minimac3Executable/bin/Minimac3
 BFILE=/ADNI_GO_2_Forward
+MAPFILE=/local/resources/1000_genomes_reference_panels/map/1000GP_Phase3/genetic_map_chr
+REFHAPS=/local/resources/1000_genomes_reference_panels/m3vcfs/1.1000g.Phase3.v5.With.Parameter.Estimates.m3vcf
 DATA_DIR=/local/bdds/data/ADNI/snp_data/ADNI_GO_2/ADNI_GO_2_OmniExpress
-WORKING_DIR=/local/bdds/data/ADNI/snp_data/ADNI_GO_2/QC
-
+QC_DIR=/local/bdds/data/ADNI/snp_data/ADNI_GO_2/QC
+PREPHASE_DIR=/local/bdds/data/ADNI/snp_data/ADNI_GO_2/prephase
+IMPUTE_DIR=/local/bdds/data/ADNI/snp_data/ADNI_GO_2/impute
